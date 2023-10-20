@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="./calculator.js" defer></script>
+   
+</head>
+<body>
+    <article class="container  col-3 ">
+        <div class="calculator">
+            <div class="container row btn">
+                <div class=" row col-12 ">
+                    <input type="text" id="cal" class="cal" readonly>
+                </div>
+
+                <div class="row">
+                    <button class="num ci" onclick="clearCalc()">C</button>
+                </div>
+                <div class="row">
+                    <button class="num col-3" onclick="addToCalc('1')">1</button>
+                    <button class="num col-3" onclick="addToCalc('2')">2</button>
+                    <button class="num col-3" onclick="addToCalc('3')">3</button>
+                    <button class="num sing col-3" onclick="addToCalc('+')">+</button>
+                </div>
+                <div class="row">
+                    <button class="num col-3" onclick="addToCalc('4')">4</button>
+                    <button class="num col-3" onclick="addToCalc('5')">5</button>
+                    <button class="num col-3" onclick="addToCalc('6')">6</button>
+                    <button class="num sing col-3" onclick="addToCalc('-')">-</button>
+                </div>
+                <div class="row">
+                    <button class="num col-3" onclick="addToCalc('7')">7</button>
+                    <button class="num col-3" onclick="addToCalc('8')">8</button>
+                    <button class="num col-3" onclick="addToCalc('9')">9</button>
+                    <button class="num sing col-3"  onclick="addToCalc('*')">*</button>
+                </div>
+                <div class="row">
+                    <button class="num col-6" onclick="addToCalc('0')">0</button>
+                    <button class="num col-3" onclick="addToCalc(',')">,</button>
+                    <button class="num ci col-3" onclick="addToCalc('/')">/</button>
+                </div>
+                <div>
+                    <button class="row num ci col-12" onclick="calculate()">=</button>
+                </div>
+            </div>
+        </div>
+    
+    </article>
+    <footer>
+        <div class="row"> 
+            <p> Developed by Jose Soto</p>
+        </div>
+    </footer>
+</body>
+</html>
