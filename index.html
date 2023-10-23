@@ -10,7 +10,7 @@
    
 </head>
 <body>
-    <article class="container  col-3 ">
+    <section class="container  col-3 ">
         <div class="calculator">
             <div class="container row btn">
                 <div class=" row col-12 ">
@@ -18,7 +18,7 @@
                 </div>
 
                 <div class="row">
-                    <button class="num ci" onclick="clearCalc()">C</button>
+                    <button class="num ci" id="clearCalc">C</button>
                 </div>
                 <div class="row">
                     <button class="num col-3" onclick="addToCalc('1')">1</button>
@@ -40,7 +40,7 @@
                 </div>
                 <div class="row">
                     <button class="num col-6" onclick="addToCalc('0')">0</button>
-                    <button class="num col-3" onclick="addToCalc(',')">,</button>
+                    <button class="num col-3" onclick="addToCalc('.')">.</button>
                     <button class="num ci col-3" onclick="addToCalc('/')">/</button>
                 </div>
                 <div>
@@ -49,7 +49,7 @@
             </div>
         </div>
     
-    </article>
+    </section>
     <footer>
         <div class="row"> 
             <p> Developed by Jose Soto</p>
